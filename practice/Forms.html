@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Forms</title>
+</head>
+<body>
+    <fieldset>
+    <legend>Registration Form</legend>
+    <form>
+        <table align="center">
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td><input name="fname" id="fname" type="text" placeholder="Ashok" required></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td><input name="lname" id="lname" type="text" placeholder="Kumar" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone No.</label></td>
+                <td><input name="phone" id="phone" type="tel" placeholder="9848426881"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input name="email" id="email" type="email" placeholder="ashok@tesla.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input name="password" id="password" type="password" min="8" placeholder="min 8 characters" required></td>
+            </tr>
+            <tr>
+                <td><label for="cpassword">Confirm Password</label></td>
+                <td><input name="cpassword" id="cpassword" type="password" min="8" placeholder="min 8 characters" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input name="dob" id="dob" type="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input name="age" id="age" type="number" placeholder="18" min="16" max="45"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="other"> <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="country">Select Country</label></td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pic">Upload Picture</label></td>
+                <td><input name="pic" id="pic" type="file"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fb">Feedback</label>
+                </td>
+                <td>
+                    <textarea name="fb" id="fb"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </fieldset>
+</body>
+</html>

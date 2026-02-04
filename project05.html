@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+<h1 >Registration Form</h1>
+
+<form>
+
+    <!-- PERSONAL DETAILS -->
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <table cellpadding="5">
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td>
+                    <input type="text" id="fname" name="fname"
+                           placeholder="Tony"
+                           required maxlength="15">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td>
+                    <input type="text" id="lname" name="lname"
+                           placeholder="Stark"
+                           required maxlength="15">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">Mobile Number</label></td>
+                <td>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="9876543210"
+                           pattern="[0-9]{10}"
+                           title="Enter 10 digit mobile number">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>
+                    <input type="email" id="email" name="email"
+                           placeholder="tony@stark.com"
+                           required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td>
+                    <input type="password" id="password" name="password"
+                           placeholder="min 8 characters"
+                           minlength="8" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="cpassword">Confirm Password</label></td>
+                <td>
+                    <input type="password" id="cpassword" name="cpassword"
+                           placeholder="re-enter password"
+                           minlength="8" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td>
+                    <input type="date" id="dob" name="dob"
+                           min="1980-01-01" max="2010-12-31">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td>
+                    <input type="number" id="age" name="age"
+                           min="16" max="45" placeholder="18">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="" disabled selected>-- Select --</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="pic">Upload Picture</label></td>
+                <td>
+                    <input type="file" id="pic" name="pic" accept="image/*">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <br>
+
+    <!-- COURSE DETAILS -->
+    <fieldset>
+        <legend>Course Details</legend>
+
+        <table cellpadding="5">
+            <tr>
+                <td><label for="course">Select Course</label></td>
+                <td>
+                    <select id="course" name="course">
+                        <option value="" disabled selected>-- Select Course --</option>
+                        <option value="Python Full Stack">Python Full Stack</option>
+                        <option value="Java Full Stack">Java Full Stack</option>
+                        <option value="MERN Stack">MERN Stack</option>
+                        <option value="Data Science">Python for Data Science</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mode of Learning</td>
+                <td>
+                    <input type="radio" id="online" name="mode" value="Online">
+                    <label for="online">Online</label>
+
+                    <input type="radio" id="offline" name="mode" value="Offline">
+                    <label for="offline">Offline</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="fb">Feedback</label></td>
+                <td>
+                    <textarea id="fb" name="fb"
+                              rows="4" cols="30"
+                              placeholder="Enter your feedback..."
+                              maxlength="300"></textarea>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <br>
+
+    <!-- BUTTONS -->
+    <p align="center">
+        <input type="submit" value="📤 Submit">
+        &nbsp;&nbsp;
+        <input type="reset" value="🔄 Reset">
+    </p>
+
+</form>
+
+</body>
+</html>
